@@ -1,0 +1,12 @@
+def BMI(waga,wzrost):
+    liczba = waga/(wzrost**2)
+    if (liczba < 16):
+        return(liczba, 'niedowaga')
+    elif (liczba >= 16 and liczba <25):
+        return(liczba, 'waga w normie')
+    else:
+        return(liczba, 'nadwaga')
+
+waga = int(input("Podaj wagę w kilogramach: "))
+wzrost = float(input("Podaj wzrost w metrach: "))
+print(BMI(waga,wzrost))
