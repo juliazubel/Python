@@ -1,0 +1,7 @@
+def login(imie, nazwisko):
+    login = imie[0]+nazwisko[0]+str(len(imie))+str(len(nazwisko))
+    return login
+
+imie = input("Podaj imie: ")
+nazwisko = input("Podaj nazwisko: ")
+print("Twoj login to: ", login(imie,nazwisko))
