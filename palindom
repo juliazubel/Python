@@ -1,0 +1,6 @@
+def palindrome(word):
+    return word == word[::-1]
+
+slowo = (input("Podaj slowo do sprawdzenia czy jest palindromem: "))
+
+print(palindrome(slowo))
