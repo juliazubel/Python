@@ -1,0 +1,21 @@
+a = int(input ("liczba kolumn pierwszej macierzy: "))
+b = int(input ("liczba wierszy pierwszej i kolumn drugiej macierzy: "))
+c = int(input ("liczba wierszy drugiej macierzy: "))
+
+
+print("Wprowadz", a*b ,"elementów macierzyA: ")
+
+macierzA = [[int(input()) for i in range(b)] for j in range(a)]
+
+print("Wprowadz", b*c ,"elementów macierzyB: ")
+
+macierzB = [[int(input()) for i in range(c)] for j in range(b)]
+
+macierzC = [[0]*c for i in range(a)]
+
+for i in range(a):
+    for k in range(b):
+        for j in range(c):
+            macierzC[i][j] = macierzC[i][j] + macierzA[i][k] * macierzB[k][j]
+
+print(macierzC)
