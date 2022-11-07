@@ -1,4 +1,0 @@
-import re
-zad6 = "ATTTGgccTaC"
-x = str(re.findall('[^a-z]',zad6))
-print(x)
