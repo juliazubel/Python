@@ -1,0 +1,5 @@
+lista = [['Ania',2], ['Michal',3], ['Romek',3], ['Tysia', 1]]
+
+x = sorted(lista, key=lambda p: p[1])[1]
+
+print(x)
