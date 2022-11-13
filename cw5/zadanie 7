@@ -1,0 +1,4 @@
+import re
+zad7 = "ala ma kota: ala@interia.pl ola hahaha@wp.pl grzes nie ma pk81@gmail.com"
+x = re.findall('[a-z||0-9]+[@][a-z]+[.][a-z]+',zad7)
+print(x)
