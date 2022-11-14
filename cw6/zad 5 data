@@ -1,0 +1,6 @@
+import re
+
+data = '2019-11-28'
+
+x = re.sub(r'(\d{4})([-]\d{2}[-])(\d{2})', lambda a: a.group(3)+a.group(2)+a.group(1), data)
+print(x)
