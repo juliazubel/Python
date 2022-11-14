@@ -1,0 +1,7 @@
+import re
+
+s = 'aldaAS dsADWF ADSshtKK. Gdwygh GIRT. fvrgoij muewrsd we. EEE.'
+
+x = re.sub(r'(^[a-z])', lambda a: a.group(1).upper(), s)
+y = re.sub(r'([.]\s[a-z])', lambda a: a.group(1).upper(), x)
+print(y)
