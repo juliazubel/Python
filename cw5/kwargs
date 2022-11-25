@@ -1,0 +1,10 @@
+def czyWypozyczono(**kwargs):
+    lista = []
+    x = input("Tytul: ")
+    print("Wprowadzone dane:", kwargs)
+    for key,value in kwargs.items():
+        if x in value:
+            lista.append(key)
+    return lista
+
+print("Lista ID:" , czyWypozyczono(id1=['Potop', 'Pan Tadeusz'], id2=['Ferdydurke'], id3=['Zbrodnia i kara', 'Potop', 'Harry Potter']))
