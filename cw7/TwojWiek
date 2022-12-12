@@ -1,0 +1,14 @@
+from datetime import datetime, date
+
+teraz = date.today()
+print(teraz)
+a = input("Podaj date urodzenia w formacie: DD MM RRRR: ")
+aObj = datetime.strptime(a, "%d %m %Y").date()
+print(aObj)
+
+t1 = teraz - aObj
+t1int = int(t1.days)
+lata = int(t1int/365)
+miesiace = int((t1int - lata*365)/30)
+dni = int(t1int - lata*365 - miesiace*30)
+print("Roznica lat:", lata, ", miesiecy:", miesiace, ", dni:", dni)
