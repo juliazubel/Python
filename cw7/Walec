@@ -1,0 +1,18 @@
+import math
+
+class Walec:
+    def __init__(self, radius, height):
+        self.radius = radius
+        self.height = height
+
+    def podstawa(self):
+        return 3.14 * self.radius**2
+
+    def boczne(self):
+        return 2 * 3.14 * self.radius * self.height
+
+    def objetosc(self):
+        return 3.14 * self.radius**2 * self.height
+
+    def pret(self):
+        return math.sqrt((self.radius*2)**2 + self.height**2)
