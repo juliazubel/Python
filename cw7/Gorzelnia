@@ -1,0 +1,17 @@
+class Gorzelnia:
+    def __init__(self, name, surname, ID, age):
+        self.name = name
+        self.surname = surname
+        self.ID = ID
+        self.age = age
+
+    def printing(self):
+        print("Name:", self.name, self.surname, "ID:", self.ID, "Age:", self.age )
+
+Mirek = Gorzelnia("Miroslaw", "Slawomir", 420, 99)
+Stefcio = Gorzelnia("Stefan", "Pobozny", 2137, 33)
+Martusia = Gorzelnia("Marta", "Hotuwa", 22, 22)
+
+Mirek.printing()
+print(Stefcio.ID)
+print(Martusia.surname)
