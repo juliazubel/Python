@@ -5,3 +5,5 @@ for i in zad8:
     x.append(re.findall(r'^(\w)\w*\s+\1\w*$',i))
 
 print(x)
+
+#wypisuje listę zawierającą podlisty, jeżeli pierwsza litera się powtarza to ją podaje - ale to ne to miało robić
