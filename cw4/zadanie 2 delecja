@@ -4,3 +4,4 @@ def KodonyZDelecja(x):
             print(i)
 
 KodonyZDelecja(["ATCGGGCAT", "ATCGA", "TTTGCGA"])
+#a dlaczego be lambdy?
